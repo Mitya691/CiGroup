@@ -1,0 +1,11 @@
+C:\Users\sidorchuk\source\Elevator\Sharp7\bin\Debug\net6.0\Sharp7.deps.json
+C:\Users\sidorchuk\source\Elevator\Sharp7\bin\Debug\net6.0\Sharp7.dll
+C:\Users\sidorchuk\source\Elevator\Sharp7\bin\Debug\net6.0\Sharp7.pdb
+C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net6.0\Sharp7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net6.0\Sharp7.AssemblyInfoInputs.cache
+C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net6.0\Sharp7.AssemblyInfo.cs
+C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net6.0\Sharp7.csproj.CoreCompileInputs.cache
+C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net6.0\Sharp7.dll
+C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net6.0\refint\Sharp7.dll
+C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net6.0\Sharp7.pdb
+C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net6.0\ref\Sharp7.dll

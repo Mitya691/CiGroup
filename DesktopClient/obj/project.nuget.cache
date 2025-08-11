@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "m7YmYmM9P38=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sidorchuk\\source\\Elevator\\DesktopClient\\DesktopClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sidorchuk\\.nuget\\packages\\materialdesigncolors\\5.2.1\\materialdesigncolors.5.2.1.nupkg.sha512",
+    "C:\\Users\\sidorchuk\\.nuget\\packages\\materialdesignthemes\\5.2.1\\materialdesignthemes.5.2.1.nupkg.sha512",
+    "C:\\Users\\sidorchuk\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}

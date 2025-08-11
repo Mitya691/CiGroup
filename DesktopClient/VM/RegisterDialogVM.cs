@@ -1,0 +1,119 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using DesktopClient.Helpers;
+using DesktopClient.Model;
+
+namespace DesktopClient.VM
+{
+    public class RegisterDialogVM : ViewModelBase
+    {
+        public User User { get; set; }
+
+        private string _name;
+        public string Name
+        {
+            get { return _name; }
+            set 
+            {
+                if (Set(ref _password, value))
+                    RegistrationCommand?.RaiseCanExecuteChanged();
+            }
+        }
+
+        private string _family;
+        public string Family
+        {
+            get { return _family; }
+            set
+            { 
+                if (!Set(ref _family, value))
+                    RegistrationCommand?.RaiseCanExecuteChanged();
+            }
+        }
+
+        private string _patronymic;
+        public string Patronymic
+        {
+            get { return _patronymic; }
+            set
+            {
+                if(!Set(ref _patronymic, value))
+                    RegistrationCommand?.RaiseCanExecuteChanged();
+            }
+        }
+
+        private string _email;
+        public string Email
+        {
+            get { return _email; }
+            set
+            {
+                if(!Set(ref _email, value))
+                    RegistrationCommand?.RaiseCanExecuteChanged();
+            }
+        }
+
+        private string _post;
+        public string Post
+        {
+            get { return _post; }
+            set
+            {
+                if(!Set(ref _post, value))
+                    RegistrationCommand?.RaiseCanExecuteChanged();
+            }
+        }
+
+        private string _login;
+        public string Login
+        {
+            get { return _login; }
+            set
+            {
+                if(!Set(ref _login, value))
+                    RegistrationCommand?.RaiseCanExecuteChanged();
+            }
+        }
+
+        private string _password;
+        public string Password
+        {
+            get { return _password; }
+            set
+            {
+                if (!Set(ref _password, value)) 
+                    RegistrationCommand?.RaiseCanExecuteChanged();
+            }
+        }
+
+        
+
+        private readonly MainWindowVM _shell;
+        public RelayCommand CloseCommand { get; }
+        public RelayCommand RegistrationCommand { get; }
+
+        public RegisterDialogVM(MainWindowVM shell) 
+        {
+            _shell = shell;
+            RegistrationCommand = new RelayCommand(DoRegistration, CanRegistration);
+            CloseCommand = new RelayCommand(() => _shell.NavigateTo(new AutorizationDialogVM(_shell)));
+        }
+
+        private void DoRegistration()
+        {
+            //тут логика регистрации
+        }
+
+        private bool CanRegistration() 
+        {
+           return !string.IsNullOrWhiteSpace(Name) && !string.IsNullOrWhiteSpace(Family)
+                && !string.IsNullOrWhiteSpace(Patronymic) && !string.IsNullOrWhiteSpace(Email)
+                && !string.IsNullOrWhiteSpace(Post) && !string.IsNullOrWhiteSpace(Login)
+                && !string.IsNullOrWhiteSpace(Password);
+        }
+    }  
+}
