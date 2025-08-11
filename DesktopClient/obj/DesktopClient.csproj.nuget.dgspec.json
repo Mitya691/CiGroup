@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sidorchuk\\source\\Elevator\\DesktopClient\\DesktopClient.csproj": {}
+    "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\DesktopClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sidorchuk\\source\\Elevator\\DesktopClient\\DesktopClient.csproj": {
+    "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\DesktopClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sidorchuk\\source\\Elevator\\DesktopClient\\DesktopClient.csproj",
+        "projectUniqueName": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\DesktopClient.csproj",
         "projectName": "DesktopClient",
-        "projectPath": "C:\\Users\\sidorchuk\\source\\Elevator\\DesktopClient\\DesktopClient.csproj",
+        "projectPath": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\DesktopClient.csproj",
         "packagesPath": "C:\\Users\\sidorchuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sidorchuk\\source\\Elevator\\DesktopClient\\obj\\",
+        "outputPath": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,14 @@
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[5.2.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.4.0, )"
             }
           },
           "imports": [

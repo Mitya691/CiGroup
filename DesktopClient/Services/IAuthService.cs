@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DesktopClient.Services
 {
-    internal class IAuthService
+    public interface IAuthService
     {
+        Task<bool> SignInAsync(string login, string password, CancellationToken ct = default);
     }
 }

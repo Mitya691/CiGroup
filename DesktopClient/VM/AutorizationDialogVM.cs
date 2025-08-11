@@ -6,12 +6,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesktopClient.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace DesktopClient.VM
 {
     public class AutorizationDialogVM : ViewModelBase
     {
         private readonly MainWindowVM _shell;
+        private readonly IAuthService _authService;
 
         private string _login;
         public string Login
@@ -35,18 +38,21 @@ namespace DesktopClient.VM
             }
         }
 
-        public RelayCommand LoginCommand { get; }
+        public AsyncRelayCommand LoginCommand { get; }
         public RelayCommand NavigateToRegisterCommand { get; }
         public RelayCommand ForgotPassCommand { get; }
 
-        public AutorizationDialogVM(MainWindowVM shell)
+        public AutorizationDialogVM(MainWindowVM shell, IAuthService authService)
         {
             _shell = shell;
-            LoginCommand = new RelayCommand(DoLogin, CanLogin);
-            NavigateToRegisterCommand = new RelayCommand(() => _shell.NavigateTo(new RegisterDialogVM(_shell)));
+            _authService = authService;
+
+            LoginCommand = new AsyncRelayCommand(DoLoginAsync, CanLogin);
+
+            NavigateToRegisterCommand = new RelayCommand(() => _shell.NavigateTo(App.Services.GetRequiredService<RegisterDialogVM>()));
         }
     
-        protected void DoLogin()
+        private async Task DoLoginAsync()
         {
             //написать команду 
         }

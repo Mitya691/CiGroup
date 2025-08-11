@@ -24,7 +24,6 @@ namespace DesktopClient
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowVM();
         }
     }
 }

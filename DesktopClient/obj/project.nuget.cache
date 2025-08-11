@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "m7YmYmM9P38=",
+  "dgSpecHash": "F9sgPWrCSLk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sidorchuk\\source\\Elevator\\DesktopClient\\DesktopClient.csproj",
+  "projectFilePath": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\DesktopClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sidorchuk\\.nuget\\packages\\materialdesigncolors\\5.2.1\\materialdesigncolors.5.2.1.nupkg.sha512",
     "C:\\Users\\sidorchuk\\.nuget\\packages\\materialdesignthemes\\5.2.1\\materialdesignthemes.5.2.1.nupkg.sha512",
-    "C:\\Users\\sidorchuk\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    "C:\\Users\\sidorchuk\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.8\\microsoft.extensions.dependencyinjection.9.0.8.nupkg.sha512",
+    "C:\\Users\\sidorchuk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.8\\microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512",
+    "C:\\Users\\sidorchuk\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\sidorchuk\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\sidorchuk\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }

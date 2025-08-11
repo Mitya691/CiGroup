@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "DesktopClient/1.0.0": {
         "dependencies": {
-          "MaterialDesignThemes": "5.2.1"
+          "MaterialDesignThemes": "5.2.1",
+          "Microsoft.Extensions.DependencyInjection": "9.0.8"
         },
         "runtime": {
           "DesktopClient.dll": {}
@@ -31,6 +32,25 @@
           "lib/net8.0/MaterialDesignThemes.Wpf.dll": {
             "assemblyVersion": "5.2.1.0",
             "fileVersion": "5.2.1.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/9.0.8": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.825.36511"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.8": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.825.36511"
           }
         }
       },
@@ -63,6 +83,20 @@
       "sha512": "sha512-x8JDqNHJcTLLxIoVts3w7AbSq5Zo0FXTw89XqPN7+n0EKqLXFwWsywiUn08HDyTGAmZVJqbQsWKxKWCI8qfWsQ==",
       "path": "materialdesignthemes/5.2.1",
       "hashPath": "materialdesignthemes.5.2.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JJjI2Fa+QtZcUyuNjbKn04OjIUX5IgFGFu/Xc+qvzh1rXdZHLcnqqVXhR4093bGirTwacRlHiVg1XYI9xum6QQ==",
+      "path": "microsoft.extensions.dependencyinjection/9.0.8",
+      "hashPath": "microsoft.extensions.dependencyinjection.9.0.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xY3lTjj4+ZYmiKIkyWitddrp1uL5uYiweQjqo4BKBw01ZC4HhcfgLghDpPZcUlppgWAFqFy9SgkiYWOMx365pw==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.8",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512"
     },
     "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
       "type": "package",

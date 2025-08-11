@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using DesktopClient.Helpers;
 using DesktopClient.Model;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace DesktopClient.VM
 {
@@ -100,7 +101,7 @@ namespace DesktopClient.VM
         {
             _shell = shell;
             RegistrationCommand = new RelayCommand(DoRegistration, CanRegistration);
-            CloseCommand = new RelayCommand(() => _shell.NavigateTo(new AutorizationDialogVM(_shell)));
+            CloseCommand = new RelayCommand(() => _shell.NavigateTo(App.Services.GetRequiredService<AutorizationDialogVM>()));
         }
 
         private void DoRegistration()
