@@ -14,7 +14,7 @@ namespace DesktopClient.Services
         private readonly string _connectionString;
         private readonly IPasswordHasher _passwordHasher;
 
-        public AuthService(string connectionString, IPasswordHasher passwordHasher)
+        public AuthService(string connectionString, IPasswordHasher passwordHasher) //конструктор сервиса, зависит от IPasswordHasher и CS, поэтому регистрируем сервис в app.xaml.cs
         {
             _connectionString = connectionString ?? throw new ArgumentNullException(nameof(connectionString));
             _passwordHasher = passwordHasher ?? throw new ArgumentNullException(nameof(passwordHasher));
@@ -27,8 +27,8 @@ namespace DesktopClient.Services
 
             const string SqlQuery = @"
             SELECT PasswordSalt, PasswordHash, IsActive
-            FROM users
-            WHERE login = @login
+            FROM    auth_users
+            WHERE Login = @login
             LIMIT 1;"; //переписать запрос, пока что заглушка
 
             byte[] saltBytes = null;
@@ -38,21 +38,34 @@ namespace DesktopClient.Services
 
             //1) Подключаемся к бд
 
+
             await using var conn = new MySqlConnection(_connectionString);
             await conn.OpenAsync(ct);
 
             await using (var cmd = new MySqlCommand(SqlQuery, conn))
             {
-                cmd.Parameters.AddWithValue("@login", login);
-
-                await using var rd = await cmd.ExecuteReaderAsync(ct);
-
-                if (await rd.ReadAsync(ct))
+                try
                 {
-                    saltBytes = (byte[])rd["PasswordSalt"];
-                    hashBytes = (byte[])rd["PasswordHash"];
+                    cmd.Parameters.AddWithValue("@login", login);
+                }
+                catch(Exception ex)
+                { 
+                }
+                try
+                {
+                    await using var rd = await cmd.ExecuteReaderAsync(ct);
+                    if (await rd.ReadAsync(ct))
+                    {
+                        saltBytes = (byte[])rd["PasswordSalt"];
+                        hashBytes = (byte[])rd["PasswordHash"];
+                    }
+
+                }
+                catch (Exception ex)
+                {
                 }
 
+                
                 var base64Salt = Convert.ToBase64String(saltBytes);
                 var base64Hash = Convert.ToBase64String(hashBytes);
                 var ok = _passwordHasher.Verify(password, base64Salt, base64Hash);

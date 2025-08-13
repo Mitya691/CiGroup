@@ -8,7 +8,7 @@ using System.Data.SqlTypes;
 
 namespace DesktopClient.Services
 {
-    internal class Pbkdf2PasswordHasher : IPasswordHasher
+    public class Pbkdf2PasswordHasher : IPasswordHasher
     {
         public string NewSalt(int size = 16)
         {

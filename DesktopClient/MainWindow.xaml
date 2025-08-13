@@ -24,5 +24,18 @@
         </DataTemplate>
     </Window.Resources>
 
-    <ContentControl Content="{Binding CurrentViewModel}"/>
+    <Grid>
+        <Grid.Background>
+            <!-- Фоновая картинка -->
+            <ImageBrush ImageSource="/Docs/Images/MainPicture.png"
+                        Stretch="UniformToFill"
+                        AlignmentX="Center"
+                        AlignmentY="Center" />
+            <!-- Если картинка лежит как Resource: 
+                 ImageSource="pack://application:,,,/Images/background.jpg" -->
+        </Grid.Background>
+
+        <!-- Твоя текущая страница рендерится поверх фона -->
+        <ContentControl Content="{Binding CurrentViewModel}" />
+    </Grid>
 </Window>

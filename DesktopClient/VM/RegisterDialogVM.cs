@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using DesktopClient.Helpers;
 using DesktopClient.Model;
+using DesktopClient.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DesktopClient.VM
@@ -20,7 +21,7 @@ namespace DesktopClient.VM
             get { return _name; }
             set 
             {
-                if (Set(ref _password, value))
+                if (Set(ref _name, value))
                     RegistrationCommand?.RaiseCanExecuteChanged();
             }
         }
@@ -94,18 +95,23 @@ namespace DesktopClient.VM
         
 
         private readonly MainWindowVM _shell;
+        private readonly IRegistrationService _registration;
         public RelayCommand CloseCommand { get; }
-        public RelayCommand RegistrationCommand { get; }
+        public AsyncRelayCommand RegistrationCommand { get; }
 
-        public RegisterDialogVM(MainWindowVM shell) 
+        public RegisterDialogVM(MainWindowVM shell, IRegistrationService registration) 
         {
             _shell = shell;
-            RegistrationCommand = new RelayCommand(DoRegistration, CanRegistration);
+            _registration = registration;
+            RegistrationCommand = new AsyncRelayCommand(DoRegistration, CanRegistration);
             CloseCommand = new RelayCommand(() => _shell.NavigateTo(App.Services.GetRequiredService<AutorizationDialogVM>()));
         }
 
-        private void DoRegistration()
+        private async Task DoRegistration()
         {
+            var req = new SignUpRequest(Name, Family, Patronymic, Email, Post, Login, Password);
+
+            var res = await _registration.SignUpAsync(req);
             //тут логика регистрации
         }
 

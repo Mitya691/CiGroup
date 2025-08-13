@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DesktopClient.Services;
 using Microsoft.Extensions.DependencyInjection;
+using System.Diagnostics.Eventing.Reader;
 
 namespace DesktopClient.VM
 {
@@ -44,6 +45,7 @@ namespace DesktopClient.VM
 
         public AutorizationDialogVM(MainWindowVM shell, IAuthService authService)
         {
+            
             _shell = shell;
             _authService = authService;
 
@@ -51,10 +53,23 @@ namespace DesktopClient.VM
 
             NavigateToRegisterCommand = new RelayCommand(() => _shell.NavigateTo(App.Services.GetRequiredService<RegisterDialogVM>()));
         }
-    
+        
         private async Task DoLoginAsync()
         {
-            //написать команду 
+            try
+            {
+                bool ok = await _authService.SignInAsync(_login, _password);
+                //написать команду 
+
+                if (ok)
+                    _shell.NavigateTo(new HomeDialogVM(_shell));
+                else
+                    System.Windows.MessageBox.Show("Неверный логин или пароль");
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show("Не удалось подключиться к базе данных");
+            }
         }
 
         private bool CanLogin() =>

@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DesktopClient.View"
+             xmlns:att="clr-namespace:DesktopClient.Helpers"
              mc:Ignorable="d" 
              d:DesignHeight="700" d:DesignWidth="800">
 
@@ -86,7 +87,7 @@
         </Style>
     </UserControl.Resources>
 
-    <DockPanel LastChildFill="True" Background="LightGray">
+    <DockPanel LastChildFill="True" >
         <Border 
         MinWidth="300"
         MaxWidth="500" 
@@ -94,7 +95,7 @@
         CornerRadius="12"
         Background="White"
         HorizontalAlignment="Center"
-        VerticalAlignment="Center">
+        VerticalAlignment="Center" Cursor="">
 
             <StackPanel Cursor="">
 
@@ -136,33 +137,41 @@
 
 
                 <TextBlock Text="Имя" Style="{StaticResource FormLabel}"/>
-                <TextBox Tag="Введите имя" Style="{StaticResource FormTextBox}" />
+                <TextBox Tag="Введите имя" Style="{StaticResource FormTextBox}" 
+                         Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
 
                 <TextBlock Text="Фамилия" Style="{StaticResource FormLabel}"/>
-                <TextBox Tag="Введите фамилию" Style="{StaticResource FormTextBox}"/>
+                <TextBox Tag="Введите фамилию" Style="{StaticResource FormTextBox}"
+                         Text="{Binding Family, UpdateSourceTrigger=PropertyChanged}"/>
 
                 <TextBlock Text="Отчество" Style="{StaticResource FormLabel}"/>
-                <TextBox Tag="Введите отчество" Style="{StaticResource FormTextBox}"/>
+                <TextBox Tag="Введите отчество" Style="{StaticResource FormTextBox}"
+                         Text="{Binding Patronymic, UpdateSourceTrigger=PropertyChanged}"/>
 
                 <TextBlock Text="Почта" Style="{StaticResource FormLabel}"/>
-                <TextBox Tag="Введите почту" Style="{StaticResource FormTextBox}"/>
+                <TextBox Tag="Введите почту" Style="{StaticResource FormTextBox}"
+                         Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
 
                 <TextBlock Text="Должность" Style="{StaticResource FormLabel}"/>
-                <TextBox Tag="Введите должность" Style="{StaticResource FormTextBox}"/>
+                <TextBox Tag="Введите должность" Style="{StaticResource FormTextBox}"
+                         Text="{Binding Post, UpdateSourceTrigger=PropertyChanged}"/>
 
                 <TextBlock Text="Логин" Style="{StaticResource FormLabel}"/>
-                <TextBox Tag="Придумайте логин" Style="{StaticResource FormTextBox}"/>
+                <TextBox Tag="Придумайте логин" Style="{StaticResource FormTextBox}"
+                         Text="{Binding Login, UpdateSourceTrigger=PropertyChanged}"/>
 
                 <TextBlock Text="Пароль" Style="{StaticResource FormLabel}"/>
                 <PasswordBox Tag="Придумайте пароль" Margin="0 0 0 20"
                          BorderBrush="Gray" BorderThickness="0.5"
-                         Padding="8,4,0,4"/>
+                         Padding="8,4,0,4"
+                         att:PasswordBoxAssist.BoundPassword = "{Binding Password, Mode = TwoWay, UpdateSourceTrigger = PropertyChanged}"/>
 
                 <!-- Кнопка -->
                 <Button Content="Зарегистрироваться" 
                     Style="{StaticResource BaseButton}" 
                     Foreground="Black" 
-                    HorizontalAlignment="Stretch"/>
+                    HorizontalAlignment="Stretch"
+                    Command="{Binding RegistrationCommand}" Cursor="Hand"/>
             </StackPanel>
         </Border>
     </DockPanel>

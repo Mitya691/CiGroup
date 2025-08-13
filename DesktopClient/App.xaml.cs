@@ -20,9 +20,16 @@ namespace DesktopClient
 
             var serviceCollection = new ServiceCollection();
 
+            string CS = "Server=localhost;Database=elevatordb;Uid=root;Pwd=Sd$#5186;SslMode=None;";
+
             // Сервисы
-            serviceCollection.AddSingleton<IAuthService, AuthService>();
-           // serviceCollection.AddSingleton<IUserService, UserService>();
+            serviceCollection.AddSingleton<IPasswordHasher, Pbkdf2PasswordHasher>();
+            serviceCollection.AddSingleton<IAuthService>(sp =>
+                 new AuthService(CS, sp.GetRequiredService<IPasswordHasher>()));
+            serviceCollection.AddSingleton<IRegistrationService>(sp =>
+                 new RegistrationService(CS, sp.GetRequiredService<IPasswordHasher>()));
+
+            // serviceCollection.AddSingleton<IUserService, UserService>();
 
             // VM
             serviceCollection.AddSingleton<MainWindowVM>();

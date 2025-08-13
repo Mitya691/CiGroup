@@ -32,49 +32,57 @@ namespace DesktopClient.Helpers
                 typeof(string), 
                 typeof(PasswordBoxAssist), 
                 new FrameworkPropertyMetadata(string.Empty, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,OnBoundPasswordChanged));
-        public static bool GetIsUpdating(DependencyObject o) => (bool)o.GetValue(BoundPasswordProperty);
-        public static void SetIsUpdating(DependencyObject o, bool value) => o.SetValue(BoundPasswordProperty, value);
+
+        public static string GetBoundPassword(DependencyObject o) => (string)o.GetValue(BoundPasswordProperty);
+        public static void SetBoundPassword(DependencyObject o, string value) => o.SetValue(BoundPasswordProperty, value);
+
+        private static readonly DependencyProperty IsUpdatingProperty =
+            DependencyProperty.RegisterAttached("IsUpdating", typeof(bool), typeof(PasswordBoxAssist), new PropertyMetadata(false));
+        public static bool GetIsUpdating(DependencyObject o) => (bool)o.GetValue(IsUpdatingProperty);
+        public static void SetIsUpdating(DependencyObject o, bool value) => o.SetValue(IsUpdatingProperty, value);
 
 
         private static void OnAttach(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            if (d is PasswordBox pb)
-            {
-                if ((bool)e.NewValue)
-                {
-                    pb.PasswordChanged -= Pb_PasswordChanged;
-                    pb.PasswordChanged += Pb_PasswordChanged;
+            if (d is not PasswordBox pb) return;
 
-                    // первичная инициализация
-                    SetHasText(pb, pb.SecurePassword.Length > 0);
-                }
-                else
-                {
-                    pb.PasswordChanged -= Pb_PasswordChanged;
-                }
+            if ((bool)e.NewValue)
+            {
+                pb.PasswordChanged -= Pb_PasswordChanged;
+                pb.PasswordChanged += Pb_PasswordChanged;
+                SetHasText(pb, pb.SecurePassword.Length > 0);
+            }
+            else
+            {
+                pb.PasswordChanged -= Pb_PasswordChanged;
+            }
+        }
+
+        private static void OnBoundPasswordChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (d is not PasswordBox pb) return;
+
+            // обновление из VM -> в контрол
+            if (!GetIsUpdating(pb))
+            {
+                pb.PasswordChanged -= Pb_PasswordChanged; // чтобы не триггерить назад
+                pb.Password = e.NewValue?.ToString() ?? string.Empty;
+                SetHasText(pb, pb.SecurePassword.Length > 0);
+                pb.PasswordChanged += Pb_PasswordChanged;
             }
         }
 
         private static void Pb_PasswordChanged(object sender, RoutedEventArgs e)
         {
             var pb = (PasswordBox)sender;
+
+            // обновление из UI -> в VM
+            SetIsUpdating(pb, true);
+            SetBoundPassword(pb, pb.Password);
             SetHasText(pb, pb.SecurePassword.Length > 0);
-        }
-
-        private static void OnBoundPasswordChanged(DependencyObject d, DependencyPropertyChangedEventArgs e )
-        {
-            var pb = d as PasswordBox;
-            if (pb == null) return;
-
-            // если пришёл апдейт из VM — кладём его в PasswordBox
-            if (!GetIsUpdating(pb))
-            {
-                SetIsUpdating(pb, true);
-                pb.Password = e.NewValue?.ToString() ?? string.Empty;
-                SetHasText(pb, pb.SecurePassword.Length > 0);
-                SetIsUpdating(pb, false);
-            }
+            SetIsUpdating(pb, false);
         }
     }
 }
+
 

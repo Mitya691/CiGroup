@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesktopClient.Services
 {
-    internal interface IPasswordHasher
+    public interface IPasswordHasher
     {
         string NewSalt(int size = 16);
         string Hash(string password, string base64Salt, int iterations = 100_000);

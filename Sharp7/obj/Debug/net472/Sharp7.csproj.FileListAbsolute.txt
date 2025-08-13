@@ -7,3 +7,13 @@ C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net472\Sharp7.AssemblyInfo.c
 C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net472\Sharp7.csproj.CoreCompileInputs.cache
 C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net472\Sharp7.dll
 C:\Users\sidorchuk\source\Elevator\Sharp7\obj\Debug\net472\Sharp7.pdb
+C:\Users\sidorchuk\source\KernelAccounting\Sharp7\bin\Debug\net472\Sharp7.dll
+C:\Users\sidorchuk\source\KernelAccounting\Sharp7\bin\Debug\net472\Sharp7.pdb
+C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net472\Sharp7.csproj.AssemblyReference.cache
+C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net472\Sharp7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net472\Sharp7.AssemblyInfoInputs.cache
+C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net472\Sharp7.AssemblyInfo.cs
+C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net472\Sharp7.csproj.CoreCompileInputs.cache
+C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net472\Sharp7.sourcelink.json
+C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net472\Sharp7.dll
+C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net472\Sharp7.pdb

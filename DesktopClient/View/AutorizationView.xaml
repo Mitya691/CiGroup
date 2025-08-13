@@ -198,15 +198,14 @@
                 <TextBlock Text="Логин" Width="262" Margin="0 0 0 10"/>
                 <TextBox Style="{StaticResource PlaceholderTextBoxStyle}" Tag="Введите логин" Padding="8,4,0,4"
                       BorderBrush="Gray" BorderThickness="0.5" Width="250" Margin="0 0 0 20" HorizontalAlignment="Center"
-                         Text="{Binding Login}"/>
+                         Text="{Binding Login, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBlock Text="Пароль" Margin="0 0 0 10" Width="262"/>
 
                 <PasswordBox Style="{StaticResource PlaceholderPasswordBoxStyle}" Tag="Введите пароль"
                            Padding="8,4,0,4"
                            BorderBrush="Gray" BorderThickness="0.5"
-                           Width="250" Margin="0 0 0 15" HorizontalAlignment="Center" 
-                           
-                           />
+                           Width="250" Margin="0 0 0 15" HorizontalAlignment="Center"
+                           att:PasswordBoxAssist.BoundPassword = "{Binding Password, Mode = TwoWay, UpdateSourceTrigger = PropertyChanged}" />
 
                 <Button x:Name="LogButton" Height="25" Width="250" Content="Войти" HorizontalAlignment="Center" Style="{StaticResource BaseButton}" 
                      Command="{Binding LoginCommand}" Margin="0 10 0 0" Foreground="Black" Padding="0" FontSize="12" FontWeight="Normal"/>
