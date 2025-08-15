@@ -34,6 +34,7 @@ C:\Users\sidorchuk\source\Elevator\DesktopClient\obj\Debug\net8.0-windows\View\H
 C:\Users\sidorchuk\source\Elevator\DesktopClient\obj\Debug\net8.0-windows\View\ConfiguratioView.baml
 C:\Users\sidorchuk\source\Elevator\DesktopClient\obj\Debug\net8.0-windows\View\HomeView.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.csproj.AssemblyReference.cache
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\HomeView.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\AutorizationView.g.cs
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\ConfiguratioView.g.cs
@@ -43,9 +44,6 @@ C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-window
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient_MarkupCompile.cache
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient_MarkupCompile.lref
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.dll
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\refint\DesktopClient.dll
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.pdb
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\DesktopClient.exe
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\DesktopClient.deps.json
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\DesktopClient.runtimeconfig.json
@@ -55,12 +53,13 @@ C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-window
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\MySqlConnector.dll
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\App.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\AutorizationView.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\ConfiguratioView.baml
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\HomeView.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\RegisterView.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.g.resources
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.GeneratedMSBuildEditorConfig.editorconfig
@@ -69,7 +68,10 @@ C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-window
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.csproj.CoreCompileInputs.cache
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.sourcelink.json
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopC.3DF0E902.Up2Date
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.dll
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\refint\DesktopClient.dll
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.pdb
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.genruntimeconfig.cache
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\ref\DesktopClient.dll
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\MySqlConnector.dll
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\Helpers\UserControl1.g.cs
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\Helpers\UserControl1.baml

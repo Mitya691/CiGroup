@@ -59,7 +59,6 @@ namespace DesktopClient.VM
             try
             {
                 bool ok = await _authService.SignInAsync(_login, _password);
-                //написать команду 
 
                 if (ok)
                     _shell.NavigateTo(new HomeDialogVM(_shell));

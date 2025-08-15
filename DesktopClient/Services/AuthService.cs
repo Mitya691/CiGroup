@@ -64,7 +64,6 @@ namespace DesktopClient.Services
                 catch (Exception ex)
                 {
                 }
-
                 
                 var base64Salt = Convert.ToBase64String(saltBytes);
                 var base64Hash = Convert.ToBase64String(hashBytes);

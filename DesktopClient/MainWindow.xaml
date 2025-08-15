@@ -22,6 +22,11 @@
         <DataTemplate DataType="{x:Type vm:RegisterDialogVM}">
             <view:RegisterView/>
         </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:HomeDialogVM}">
+            <view:HomeView/>
+        </DataTemplate>
+                      
     </Window.Resources>
 
     <Grid>
@@ -36,6 +41,11 @@
         </Grid.Background>
 
         <!-- Твоя текущая страница рендерится поверх фона -->
-        <ContentControl Content="{Binding CurrentViewModel}" />
+        <ContentControl Content="{Binding CurrentViewModel}" 
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        HorizontalContentAlignment="Stretch"
+                        VerticalContentAlignment="Stretch"
+                        Margin="0"/>
     </Grid>
 </Window>
