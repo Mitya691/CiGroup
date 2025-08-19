@@ -3,80 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\services\\sqlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\services\\sqlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\view\\registerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\view\\registerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\services\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\services\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\vm\\autorizationdialogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\vm\\autorizationdialogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5D11FF8-A2C8-4ACE-97AE-E8B483B2C3DB}|InImArchiverServiceTest\\InImArchiverServiceTest.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\inimarchiverservicetest\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D11FF8-A2C8-4ACE-97AE-E8B483B2C3DB}|InImArchiverServiceTest\\InImArchiverServiceTest.csproj|solutionrelative:inimarchiverservicetest\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\vm\\registerdialogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\vm\\registerdialogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\view\\autorizationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\view\\autorizationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\services\\iregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\services\\iregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\vm\\homecardvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\vm\\homecardvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\services\\pbkdf2passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\services\\pbkdf2passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\vm\\autorizationdialogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\vm\\autorizationdialogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\services\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\services\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\vm\\homedialogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\vm\\homedialogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\helpers\\passwordboxassist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\helpers\\passwordboxassist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\helpers\\asyncrelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\helpers\\asyncrelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\helpers\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\helpers\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|c:\\users\\sidorchuk\\source\\kernelaccounting\\desktopclient\\model\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18704E92-1FD8-4961-BE78-02911318C33C}|DesktopClient\\DesktopClient.csproj|solutionrelative:desktopclient\\model\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 266,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,241 +66,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "DesktopClient\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\MainWindow.xaml",
-              "RelativeToolTip": "DesktopClient\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-13T13:41:40.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AutorizationView.xaml",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\View\\AutorizationView.xaml",
-              "RelativeDocumentMoniker": "DesktopClient\\View\\AutorizationView.xaml",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\View\\AutorizationView.xaml",
-              "RelativeToolTip": "DesktopClient\\View\\AutorizationView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-12T07:40:59.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AutorizationDialogVM.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\AutorizationDialogVM.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\VM\\AutorizationDialogVM.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\AutorizationDialogVM.cs",
-              "RelativeToolTip": "DesktopClient\\VM\\AutorizationDialogVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAQAAAAAAAAAA==",
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\InImArchiverServiceTest\\Server.cs",
+              "RelativeDocumentMoniker": "InImArchiverServiceTest\\Server.cs",
+              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\InImArchiverServiceTest\\Server.cs",
+              "RelativeToolTip": "InImArchiverServiceTest\\Server.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T08:40:03.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterDialogVM.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\RegisterDialogVM.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\VM\\RegisterDialogVM.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\RegisterDialogVM.cs",
-              "RelativeToolTip": "DesktopClient\\VM\\RegisterDialogVM.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAADwv2cAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T08:19:31.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Pbkdf2PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\Pbkdf2PasswordHasher.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\Services\\Pbkdf2PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\Pbkdf2PasswordHasher.cs",
-              "RelativeToolTip": "DesktopClient\\Services\\Pbkdf2PasswordHasher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T07:40:20.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Model\\User.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\Model\\User.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Model\\User.cs",
-              "RelativeToolTip": "DesktopClient\\Model\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T06:36:04.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HomeDialogVM.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\HomeDialogVM.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\VM\\HomeDialogVM.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\HomeDialogVM.cs",
-              "RelativeToolTip": "DesktopClient\\VM\\HomeDialogVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T07:37:00.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IPasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\IPasswordHasher.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\Services\\IPasswordHasher.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\IPasswordHasher.cs",
-              "RelativeToolTip": "DesktopClient\\Services\\IPasswordHasher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T10:58:54.735Z",
+              "WhenOpened": "2025-08-18T14:34:38.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RegisterView.xaml",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\View\\RegisterView.xaml",
-              "RelativeDocumentMoniker": "DesktopClient\\View\\RegisterView.xaml",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\View\\RegisterView.xaml",
-              "RelativeToolTip": "DesktopClient\\View\\RegisterView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-13T08:50:38.085Z",
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\IRepository.cs",
+              "RelativeDocumentMoniker": "DesktopClient\\Services\\IRepository.cs",
+              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\IRepository.cs",
+              "RelativeToolTip": "DesktopClient\\Services\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T06:45:10.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SQLRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\SQLRepository.cs",
+              "RelativeDocumentMoniker": "DesktopClient\\Services\\SQLRepository.cs",
+              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\SQLRepository.cs",
+              "RelativeToolTip": "DesktopClient\\Services\\SQLRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T06:30:31.798Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "RegistrationService.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\RegistrationService.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\Services\\RegistrationService.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\RegistrationService.cs",
-              "RelativeToolTip": "DesktopClient\\Services\\RegistrationService.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwFkAAAAQAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Model\\User.cs",
+              "RelativeDocumentMoniker": "DesktopClient\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Model\\User.cs",
+              "RelativeToolTip": "DesktopClient\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T09:58:55.297Z",
+              "WhenOpened": "2025-08-18T06:03:45.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\AuthService.cs",
-              "RelativeToolTip": "DesktopClient\\Services\\AuthService.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAUwEQAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "HomeCardVM.cs",
+              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\HomeCardVM.cs",
+              "RelativeDocumentMoniker": "DesktopClient\\VM\\HomeCardVM.cs",
+              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\HomeCardVM.cs",
+              "RelativeToolTip": "DesktopClient\\VM\\HomeCardVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T08:41:52.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\App.xaml.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\App.xaml.cs",
-              "RelativeToolTip": "DesktopClient\\App.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwBYAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T11:09:43.213Z",
+              "WhenOpened": "2025-08-14T10:43:21.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "IRegistrationService.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\IRegistrationService.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\Services\\IRegistrationService.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Services\\IRegistrationService.cs",
-              "RelativeToolTip": "DesktopClient\\Services\\IRegistrationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Model\\Card.cs",
+              "RelativeDocumentMoniker": "DesktopClient\\Model\\Card.cs",
+              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Model\\Card.cs",
+              "RelativeToolTip": "DesktopClient\\Model\\Card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T09:58:02.388Z",
+              "WhenOpened": "2025-08-15T14:28:25.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PasswordBoxAssist.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Helpers\\PasswordBoxAssist.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\Helpers\\PasswordBoxAssist.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Helpers\\PasswordBoxAssist.cs",
-              "RelativeToolTip": "DesktopClient\\Helpers\\PasswordBoxAssist.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAywCwAAABeAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "RegisterDialogVM.cs",
+              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\RegisterDialogVM.cs",
+              "RelativeDocumentMoniker": "DesktopClient\\VM\\RegisterDialogVM.cs",
+              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\RegisterDialogVM.cs",
+              "RelativeToolTip": "DesktopClient\\VM\\RegisterDialogVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T07:45:56.219Z"
+              "WhenOpened": "2025-08-15T10:38:31.843Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\MainWindow.xaml.cs",
-              "RelativeToolTip": "DesktopClient\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAIAwwBkAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AutorizationDialogVM.cs",
+              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\AutorizationDialogVM.cs",
+              "RelativeDocumentMoniker": "DesktopClient\\VM\\AutorizationDialogVM.cs",
+              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\VM\\AutorizationDialogVM.cs",
+              "RelativeToolTip": "DesktopClient\\VM\\AutorizationDialogVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T12:11:32.403Z"
+              "WhenOpened": "2025-08-15T10:38:04.821Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\App.xaml",
-              "RelativeDocumentMoniker": "DesktopClient\\App.xaml",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\App.xaml",
-              "RelativeToolTip": "DesktopClient\\App.xaml",
+              "DocumentIndex": 3,
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\View\\HomeView.xaml",
+              "RelativeDocumentMoniker": "DesktopClient\\View\\HomeView.xaml",
+              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\View\\HomeView.xaml",
+              "RelativeToolTip": "DesktopClient\\View\\HomeView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-11T12:13:01.519Z",
+              "WhenOpened": "2025-08-14T06:06:41.578Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MainWindowVM.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\MainWindowVM.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\MainWindowVM.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\MainWindowVM.cs",
-              "RelativeToolTip": "DesktopClient\\MainWindowVM.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T11:03:11.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AsyncRelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Helpers\\AsyncRelayCommand.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\Helpers\\AsyncRelayCommand.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Helpers\\AsyncRelayCommand.cs",
-              "RelativeToolTip": "DesktopClient\\Helpers\\AsyncRelayCommand.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwC0AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T10:13:58.53Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Helpers\\RelayCommand.cs",
-              "RelativeDocumentMoniker": "DesktopClient\\Helpers\\RelayCommand.cs",
-              "ToolTip": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\Helpers\\RelayCommand.cs",
-              "RelativeToolTip": "DesktopClient\\Helpers\\RelayCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T07:34:38.77Z"
             }
           ]
         }

@@ -47,7 +47,6 @@ C:\Users\sidorchuk\source\KernelAccounting\InImArchiverService\bin\Debug\System.
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverService\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverService\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverService\obj\Debug\InImArchiverService.csproj.AssemblyReference.cache
-C:\Users\sidorchuk\source\KernelAccounting\InImArchiverService\obj\Debug\InImArchiverService.exe.config
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverService\obj\Debug\InImArchiverService.InImArchiverService.resources
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverService\obj\Debug\InImArchiverService.ProjectInstaller.resources
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverService\obj\Debug\InImArchiverService.csproj.GenerateResource.cache

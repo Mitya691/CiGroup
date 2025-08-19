@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\App.xaml
 6-893075780
 
-30-272674450
+32-1753522028
 20545574813
 Helpers\UserControl1.xaml;MainWindow.xaml;View\AutorizationView.xaml;View\ConfiguratioView.xaml;View\HomeView.xaml;View\RegisterView.xaml;
 
-True
+False
 

@@ -13,7 +13,7 @@ namespace DesktopClient.VM
 {
     public class RegisterDialogVM : ViewModelBase
     {
-        public User User { get; set; }
+        public User User { get; set; }//???
 
         private string _name;
         public string Name

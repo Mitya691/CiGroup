@@ -44,7 +44,6 @@ C:\Users\sidorchuk\source\KernelAccounting\InImArchiverServiceTest\bin\Debug\Sys
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverServiceTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverServiceTest\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverServiceTest\obj\Debug\InImArchiverServiceTest.csproj.AssemblyReference.cache
-C:\Users\sidorchuk\source\KernelAccounting\InImArchiverServiceTest\obj\Debug\InImArchiverServiceTest.exe.config
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverServiceTest\obj\Debug\InImArchiverServiceTest.csproj.CoreCompileInputs.cache
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverServiceTest\obj\Debug\InImArch.E73E93FD.Up2Date
 C:\Users\sidorchuk\source\KernelAccounting\InImArchiverServiceTest\obj\Debug\InImArchiverServiceTest.exe
