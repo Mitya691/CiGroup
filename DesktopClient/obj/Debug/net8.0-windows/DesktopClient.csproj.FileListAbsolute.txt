@@ -34,12 +34,13 @@ C:\Users\sidorchuk\source\Elevator\DesktopClient\obj\Debug\net8.0-windows\View\H
 C:\Users\sidorchuk\source\Elevator\DesktopClient\obj\Debug\net8.0-windows\View\ConfiguratioView.baml
 C:\Users\sidorchuk\source\Elevator\DesktopClient\obj\Debug\net8.0-windows\View\HomeView.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.csproj.AssemblyReference.cache
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\HomeView.baml
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\Helpers\UserBadge.g.cs
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\Helpers\UserControl1.g.cs
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\AutorizationView.g.cs
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\ConfiguratioView.g.cs
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\HomeView.g.cs
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\RegisterView.g.cs
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\ReportView.g.cs
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient_MarkupCompile.cache
@@ -57,10 +58,13 @@ C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-window
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\bin\Debug\net8.0-windows\MySqlConnector.dll
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\App.baml
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\Helpers\UserBadge.baml
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\Helpers\UserControl1.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\AutorizationView.baml
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\ConfiguratioView.baml
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\HomeView.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\RegisterView.baml
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\View\ReportView.baml
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.g.resources
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.AssemblyInfoInputs.cache
@@ -73,5 +77,4 @@ C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-window
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.pdb
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient.genruntimeconfig.cache
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\ref\DesktopClient.dll
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\Helpers\UserControl1.g.cs
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\Helpers\UserControl1.baml
+C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\DesktopClient_Content.g.cs

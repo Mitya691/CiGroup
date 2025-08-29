@@ -9,10 +9,11 @@
         xmlns:view="clr-namespace:DesktopClient.View"
         mc:Ignorable="d"
         xmlns:att="clr-namespace:DesktopClient.Helpers"
-        Title="Window1" Height="400" Width="500"
+        Title="ООО МакПром — Программа учета зерна" Height="400" Width="500"
         WindowState="Maximized"
         Background="LightGray"
-        Style="{StaticResource MaterialDesignWindow}">
+        Style="{StaticResource MaterialDesignWindow}"
+        >
 
     <Window.Resources>
         <DataTemplate DataType="{x:Type vm:AutorizationDialogVM}">

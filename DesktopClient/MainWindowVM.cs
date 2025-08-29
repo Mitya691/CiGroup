@@ -23,7 +23,6 @@ namespace DesktopClient.VM
         public MainWindowVM(IServiceProvider sp)
         {
             _sp = sp;
-            // ВАЖНО: создаём дочернюю VM так, чтобы shell пришёл параметром, а не через DI
             CurrentViewModel = ActivatorUtilities.CreateInstance<AutorizationDialogVM>(_sp, this);
         }
 

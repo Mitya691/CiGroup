@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using DesktopClient.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System.Diagnostics.Eventing.Reader;
+using System.Windows;
 
 namespace DesktopClient.VM
 {
@@ -61,13 +62,23 @@ namespace DesktopClient.VM
                 bool ok = await _authService.SignInAsync(_login, _password);
 
                 if (ok)
-                    _shell.NavigateTo(new HomeDialogVM(_shell));
+                {
+                    var user = await _authService.GetCurrentUserAsync();
+                    if (user != null)
+                    {
+                        ((CurrentUserStore)Application.Current.Resources["CurrentUser"]).CurrentUser = user;
+
+                        var HomePage = App.Services.GetRequiredService<HomeDialogVM>();
+                        await HomePage.InitializeAsync();
+                        _shell.NavigateTo(HomePage);
+                    }
+                }
                 else
                     System.Windows.MessageBox.Show("Неверный логин или пароль");
             }
             catch (Exception ex)
             {
-                System.Windows.MessageBox.Show("Не удалось подключиться к базе данных");
+                System.Windows.MessageBox.Show("Не удалось подключиться к базе данных" + ex.Message);
             }
         }
 

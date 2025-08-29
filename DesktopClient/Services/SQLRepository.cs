@@ -9,41 +9,22 @@ using System.Threading.Tasks;
 
 namespace DesktopClient.Services
 {
-    internal class SQLRepository
+    public class SQLRepository : ISQLRepository
     {
         private readonly string _cs;
         public SQLRepository(string connectionString) => _cs = connectionString;
 
+        /// <summary>
+        /// Собирает подготовленные данные для прокидывания на UI
+        /// </summary>
         public async Task<List<Card>> GetLast30CardsAsync(CancellationToken ct = default)
         {
             using var conn = new MySqlConnection(_cs);
             await conn.OpenAsync(ct);
 
-            // здесь можешь подставить свою «боевую» агрегацию.
-            var sql = @"
-
-            WITH events AS (
-              SELECT TrendID, DateSet, TagValue,
-                     LEAD(DateSet) OVER (PARTITION BY TrendID ORDER BY DateSet) AS EndTime
-              FROM int_archive
-            ),
-            closed AS (
-              SELECT TrendID, DateSet AS StartTs, NextDate AS EndTs
-              FROM events WHERE TagValue=1 AND NextDate IS NOT NULL
-            )
-            SELECT
-
-              ROW_NUMBER() OVER (ORDER BY EndTs DESC) AS Id,
-              TrendID, StartTs, EndTs,
-
-              (SELECT SUM(TagValue) FROM double_archive d
-                WHERE d.TrendID=c.TrendID AND d.DateSet>=StartTs AND d.DateSet<EndTs) AS ResultB1,
-              NULL AS ResultB2,
-
-              NULL AS Direction, NULL AS MillSilo, NULL AS UserSelection
-            FROM closed c
-            ORDER BY EndTs DESC
-            LIMIT 30;";
+            var sql = @"SELECT * FROM cards
+                        ORDER BY EndTs DESC
+                        LIMIT 30;";
 
             using var cmd = new MySqlCommand(sql, conn) { CommandTimeout = 5 };
             using var r = await cmd.ExecuteReaderAsync(ct);
@@ -53,84 +34,114 @@ namespace DesktopClient.Services
             {
                 list.Add(new Card
                 {
-                    Id = r.GetInt64("Id"),
-                    TrendID = r.GetInt32("TrendID"),
+                    Id = r.GetInt32("Id"),
                     StartTime = r.GetDateTime("StartTs"),
                     EndTime = r.GetDateTime("EndTs"),
-                    ResultB1 = r.IsDBNull("ResultB1") ? (decimal?)null : r.GetDecimal("ResultB1"),
-                    ResultB2 = r.IsDBNull("ResultB2") ? (decimal?)null : r.GetDecimal("ResultB2"),
+                    Weight1 = r.IsDBNull("Weight1") ? (decimal?)null : r.GetDecimal("Weight1"),
+                    Weight2 = r.IsDBNull("Weight2") ? (decimal?)null : r.GetDecimal("Weight2"),
+                    TotalWeight = r.IsDBNull("TotalWeight") ? (decimal?)null : r.GetDecimal("TotalWeight"),
                     Direction = r.IsDBNull("Direction") ? null : r.GetString("Direction"),
-                    MillSilo = r.IsDBNull("MillSilo") ? null : r.GetString("MillSilo"),
-                    UserSelection = r.IsDBNull("UserSelection") ? null : r.GetString("UserSelection")
+                    SourceSilo = r.IsDBNull("SourceSilo") ? null : r.GetString("SourceSilo"),
+                    TargetSilo = r.IsDBNull("TargetSilo") ? null : r.GetString("TargetSilo")
                 });
             }
             return list;
         }
 
-        public async Task<List<Card>> GetCardsClosedAfterAsync(DateTime lastEndTime, int take = 100, CancellationToken ct = default)
+        public async Task<List<Card>> GetCardsForFilter(DateTime? filterStart, DateTime? filterStop, CancellationToken ct = default)
         {
             using var conn = new MySqlConnection(_cs);
             await conn.OpenAsync(ct);
 
-            var sql = @"
-            WITH events AS (
-              SELECT TrendID, DateSet, TagValue,
-                     LEAD(DateSet) OVER (PARTITION BY TrendID ORDER BY DateSet) AS NextDate
-              FROM boolean_archive
-              WHERE DateSet >= @windowStart
-            ),
-            closed AS (
-              SELECT TrendID, DateSet AS StartTs, NextDate AS EndTs
-              FROM events
-              WHERE TagValue=1 AND NextDate IS NOT NULL AND NextDate > @lastEnd
-            )
-            SELECT
-              ROW_NUMBER() OVER (ORDER BY EndTs DESC) AS Id,
-              TrendID, StartTs, EndTs,
-              (SELECT SUM(TagValue) FROM double_archive d
-                WHERE d.TrendID=c.TrendID AND d.DateSet>=StartTs AND d.DateSet<EndTs) AS ResultB1,
-              NULL AS ResultB2,
-              NULL AS Direction, NULL AS MillSilo, NULL AS UserSelection
-            FROM closed c
-            ORDER BY EndTs DESC
-            LIMIT @take;";
+            var sql = @"SELECT *
+                        FROM cards
+                        WHERE StartTs >= @filterStart AND EndTs <= @filterStop
+                        ORDER BY EndTs DESC
+                        LIMIT 30;";
 
             using var cmd = new MySqlCommand(sql, conn) { CommandTimeout = 5 };
-            cmd.Parameters.AddWithValue("@lastEnd", lastEndTime);
-            cmd.Parameters.AddWithValue("@windowStart", lastEndTime.AddDays(-1)); // небольшой хвост
-            cmd.Parameters.AddWithValue("@take", take);
-
+            cmd.Parameters.AddWithValue("@filterStart", filterStart); 
+            cmd.Parameters.AddWithValue("@filterStop", filterStop);
             using var r = await cmd.ExecuteReaderAsync(ct);
+
             var list = new List<Card>();
             while (await r.ReadAsync(ct))
             {
                 list.Add(new Card
                 {
-                    Id = r.GetInt64("Id"),
-                    TrendID = r.GetInt32("TrendID"),
+                    Id = r.GetInt32("Id"),
                     StartTime = r.GetDateTime("StartTs"),
                     EndTime = r.GetDateTime("EndTs"),
-                    ResultB1 = r.IsDBNull("ResultB1") ? (decimal?)null : r.GetDecimal("ResultB1"),
-                    ResultB2 = r.IsDBNull("ResultB2") ? (decimal?)null : r.GetDecimal("ResultB2")
+                    Weight1 = r.IsDBNull("Weight1") ? (decimal?)null : r.GetDecimal("Weight1"),
+                    Weight2 = r.IsDBNull("Weight2") ? (decimal?)null : r.GetDecimal("Weight2"),
+                    TotalWeight = r.IsDBNull("TotalWeight") ? (decimal?)null : r.GetDecimal("TotalWeight"),
+                    Direction = r.IsDBNull("Direction") ? null : r.GetString("Direction"),
+                    SourceSilo = r.IsDBNull("SourceSilo") ? null : r.GetString("SourceSilo"),
+                    TargetSilo = r.IsDBNull("TargetSilo") ? null : r.GetString("TargetSilo")
                 });
             }
             return list;
         }
 
-        public async Task UpdateCardSelectionAsync(long id, string userSelection, string userName, CancellationToken ct = default)
+        /// <summary>
+        /// Делает вставку подготовленных данных в чистую таблицу cards для удобной выборки
+        /// </summary>
+        /// <param name="lastEndInterval"></param>
+        /// <param name="ct"></param>
+        /// <returns></returns>
+        public async Task InsertNewCard(DateTime lastEndInterval, CancellationToken ct = default)
         {
-            using var conn = new MySqlConnection(_cs);
+            await using var conn = new MySqlConnection(_cs);
             await conn.OpenAsync(ct);
 
-            // если итоговая таблица есть:
-            var sql = @"UPDATE journal_intervals
-                    SET UserSelection=@sel, UpdatedBy=@user, UpdatedAt=NOW()
-                    WHERE Id=@id;";
-            using var cmd = new MySqlCommand(sql, conn) { CommandTimeout = 5 };
-            cmd.Parameters.AddWithValue("@sel", userSelection);
-            cmd.Parameters.AddWithValue("@user", userName ?? "ui");
-            cmd.Parameters.AddWithValue("@id", id);
+            const string sql = @"INSERT INTO cards(TrendID, StartTs, EndTs, SourceSilo, Direction, TargetSilo, Weight1, Weight2)
+                                    WITH c AS (
+                                        SELECT TrendID, DateSet AS StartTs,
+                                            LEAD(DateSet)  OVER (PARTITION BY TrendID ORDER BY DateSet) AS EndTs,
+                                            TagValue, LEAD(TagValue) OVER (PARTITION BY TrendID ORDER BY DateSet) AS NextVal
+                                        FROM int_archive
+                                        WHERE DateSet >= @lastEndInterval - INTERVAL 1 DAY
+                                    )
 
+                                    SELECT c.TrendID, c.StartTs, c.EndTs,
+                                        t.Name        AS SourceSilo,  
+                                        t.Direction   AS Direction,   
+                                        NULL          AS TargetSilo,   
+                                        SUM(CASE WHEN d.TrendID = 1 THEN d.TagValue ELSE 0 END) AS Weight1,
+                                        SUM(CASE WHEN d.TrendID = 2 THEN d.TagValue ELSE 0 END) AS Weight2  
+                                    FROM c
+                                    LEFT JOIN double_archive d
+                                        ON d.DateSet >= c.StartTs
+                                        AND d.DateSet <  c.EndTs
+                                    LEFT JOIN trends t
+                                        ON t.TagID = c.TrendID
+                                        WHERE c.TagValue = 1 AND c.NextVal  = 0
+                                              AND c.EndTs IS NOT NULL
+                                              AND c.EndTs > @lastEndInterval
+                                        GROUP BY c.TrendID, c.StartTs, c.EndTs, t.Name, t.Direction
+                                        ORDER BY c.EndTs DESC
+                                LIMIT 1;";
+
+            await using var cmd = new MySqlCommand( sql, conn) { CommandTimeout = 5};
+            cmd.Parameters.AddWithValue("@lastEndInterval", lastEndInterval);
+            await cmd.ExecuteNonQueryAsync(ct);
+        }
+
+        /// <summary>
+        /// Метод обновляет целевой силос в карточке
+        /// </summary>
+        public async Task UpdateCardTargetSiloAsync(long id, string targetSilo, CancellationToken ct = default)
+        {
+            await using var conn = new MySqlConnection(_cs);
+            await conn.OpenAsync(ct);
+
+            const string sql = @"UPDATE cards
+                         SET TargetSilo=@target, UpdatedAt=NOW()
+                         WHERE Id=@id;";
+
+            await using var cmd = new MySqlCommand(sql, conn) { CommandTimeout = 5 };
+            cmd.Parameters.AddWithValue("@target", targetSilo);
+            cmd.Parameters.AddWithValue("@id", id);
             await cmd.ExecuteNonQueryAsync(ct);
         }
 

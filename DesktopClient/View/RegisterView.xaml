@@ -48,43 +48,6 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
-        <Style x:Key="BaseButton"
-  TargetType="Button"
-  BasedOn="{StaticResource MaterialDesignFlatButton}">
-            <!-- your setters… -->
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border x:Name="border"
-      Background="#FFA76C"               
-      BorderBrush="Gray"
-      BorderThickness="1"
-      CornerRadius="12"
-      SnapsToDevicePixels="True">
-                            <!-- This is where your button’s Content actually appears: -->
-                            <ContentPresenter
-    Margin="{TemplateBinding Padding}"
-    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-    RecognizesAccessKey="True"/>
-                        </Border>
-
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="border" Property="Opacity" Value="0.9"/>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="border" Property="Opacity" Value="0.8"/>
-                            </Trigger>
-                            <Trigger Property="IsEnabled" Value="False">
-                                <Setter TargetName="border" Property="Opacity" Value="0.45"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
     </UserControl.Resources>
 
     <DockPanel LastChildFill="True" >
@@ -169,7 +132,7 @@
                 <!-- Кнопка -->
                 <Button Content="Зарегистрироваться" 
                     Style="{StaticResource BaseButton}" 
-                    Foreground="Black" 
+                    Foreground="White" 
                     HorizontalAlignment="Stretch"
                     Command="{Binding RegistrationCommand}" Cursor="Hand"/>
             </StackPanel>

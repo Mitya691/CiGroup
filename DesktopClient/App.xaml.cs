@@ -21,14 +21,15 @@ namespace DesktopClient
             var serviceCollection = new ServiceCollection();
 
             string CS = "Server=localhost;Database=elevatordb;Uid=root;Pwd=Sd$#5186;SslMode=None;";
-
+            string myarchiveCS = "Server=localhost;Database=myarchive;Uid=root;Pwd=Sd$#5186;SslMode=None;";
             // Сервисы
             serviceCollection.AddSingleton<IPasswordHasher, Pbkdf2PasswordHasher>();
             serviceCollection.AddSingleton<IAuthService>(sp =>
                  new AuthService(CS, sp.GetRequiredService<IPasswordHasher>()));
             serviceCollection.AddSingleton<IRegistrationService>(sp =>
                  new RegistrationService(CS, sp.GetRequiredService<IPasswordHasher>()));
-
+            serviceCollection.AddSingleton<ISQLRepository>(sp =>
+                new SQLRepository(myarchiveCS));
             // serviceCollection.AddSingleton<IUserService, UserService>();
 
             // VM

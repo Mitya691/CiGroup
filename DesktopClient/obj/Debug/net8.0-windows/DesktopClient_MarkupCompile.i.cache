@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\App.xaml
-6-893075780
-
-32-1753522028
-20545574813
-Helpers\UserControl1.xaml;MainWindow.xaml;View\AutorizationView.xaml;View\ConfiguratioView.xaml;View\HomeView.xaml;View\RegisterView.xaml;
+71087934675
+1-1506774534
+351214222971
+205-502389270
+Helpers\UserBadge.xaml;Helpers\UserControl1.xaml;MainWindow.xaml;View\AutorizationView.xaml;View\HomeView.xaml;View\RegisterView.xaml;View\ReportView.xaml;
 
 False
 

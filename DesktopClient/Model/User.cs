@@ -16,5 +16,8 @@ namespace DesktopClient.Model
         public string Login { get; set; }
         public string PasswordHash { get; set; }
         public string Salt { get; set; } //случайная генерация и приклеивание к паролю, затем хэширование происходит
+
+        public string FullName =>
+           string.Join(" ", new[] { Family, Name, Patronymic }.Where(s => !string.IsNullOrWhiteSpace(s)));
     }
 }

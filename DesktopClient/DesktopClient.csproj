@@ -1,17 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+    
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>MacPromApp.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Docs\Images\Arrow.png" />
     <None Remove="Docs\Images\CI_Logo.png" />
+    <None Remove="Docs\Images\Filter.png" />
+    <None Remove="Docs\Images\MacPromApp.ico" />
     <None Remove="Docs\Images\MacPromLogo.png" />
     <None Remove="Docs\Images\MainPicture.png" />
+    <None Remove="Docs\Images\MillIcon.png" />
+    <None Remove="Docs\Images\Silo.png" />
+    <None Remove="Docs\Images\User.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="MacPromApp.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,9 +32,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Docs\Images\Arrow.png" />
     <Resource Include="Docs\Images\CI_Logo.png" />
+    <Resource Include="Docs\Images\Filter.png" />
+    <Resource Include="Docs\Images\MacPromApp.ico" />
     <Resource Include="Docs\Images\MacPromLogo.png" />
     <Resource Include="Docs\Images\MainPicture.png" />
+    <Resource Include="Docs\Images\MillIcon.png" />
+    <Resource Include="Docs\Images\Silo.png" />
+    <Resource Include="Docs\Images\User.png" />
   </ItemGroup>
 
 </Project>
