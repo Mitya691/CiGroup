@@ -48,7 +48,7 @@ namespace DesktopClient.Services
             return list;
         }
 
-        public async Task<List<Card>> GetCardsForFilter(DateTime? filterStart, DateTime? filterStop, CancellationToken ct = default)
+        public async Task<List<Card>> GetCardsForInterval(DateTime? filterStart, DateTime? filterStop, CancellationToken ct = default)
         {
             using var conn = new MySqlConnection(_cs);
             await conn.OpenAsync(ct);
@@ -56,8 +56,7 @@ namespace DesktopClient.Services
             var sql = @"SELECT *
                         FROM cards
                         WHERE StartTs >= @filterStart AND EndTs <= @filterStop
-                        ORDER BY EndTs DESC
-                        LIMIT 30;";
+                        ORDER BY EndTs DESC;";
 
             using var cmd = new MySqlCommand(sql, conn) { CommandTimeout = 5 };
             cmd.Parameters.AddWithValue("@filterStart", filterStart); 

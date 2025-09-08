@@ -121,6 +121,35 @@
             "related": ".xml"
           }
         }
+      },
+      "NanoXLSX/2.6.4": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Packaging": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NanoXLSX.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NanoXLSX.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IO.Packaging/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
@@ -373,33 +402,77 @@
         "mysqlconnector.2.4.0.nupkg.sha512",
         "mysqlconnector.nuspec"
       ]
+    },
+    "NanoXLSX/2.6.4": {
+      "sha512": "rvD8Gp9qvUxK0qvrqi4BkU+O1hYmDnO2eibLRD7EyeIOZbTgDQPvx7RodfKmXSuKeHSfeha/k1P+TF2AhsKv8Q==",
+      "type": "package",
+      "path": "nanoxlsx/2.6.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NanoXLSX.png",
+        "lib/net45/NanoXLSX.dll",
+        "lib/net45/NanoXLSX.xml",
+        "lib/netstandard2.0/NanoXLSX.dll",
+        "lib/netstandard2.0/NanoXLSX.xml",
+        "nanoxlsx.2.6.4.nupkg.sha512",
+        "nanoxlsx.nuspec"
+      ]
+    },
+    "System.IO.Packaging/4.7.0": {
+      "sha512": "9VV4KAbgRQZ79iEoG40KIeZy38O30oWwewScAST879+oki8g/Wa2HXZQgrhDDxQM4GkP1PnRJll05NMiVPbYAw==",
+      "type": "package",
+      "path": "system.io.packaging/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.IO.Packaging.dll",
+        "lib/net46/System.IO.Packaging.xml",
+        "lib/netstandard1.3/System.IO.Packaging.dll",
+        "lib/netstandard1.3/System.IO.Packaging.xml",
+        "lib/netstandard2.0/System.IO.Packaging.dll",
+        "lib/netstandard2.0/System.IO.Packaging.xml",
+        "ref/net46/System.IO.Packaging.dll",
+        "ref/net46/System.IO.Packaging.xml",
+        "ref/netstandard1.3/System.IO.Packaging.dll",
+        "ref/netstandard1.3/System.IO.Packaging.xml",
+        "ref/netstandard2.0/System.IO.Packaging.dll",
+        "ref/netstandard2.0/System.IO.Packaging.xml",
+        "system.io.packaging.4.7.0.nupkg.sha512",
+        "system.io.packaging.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "MaterialDesignThemes >= 5.2.1",
       "Microsoft.Extensions.DependencyInjection >= 9.0.8",
-      "MySqlConnector >= 2.4.0"
+      "MySqlConnector >= 2.4.0",
+      "NanoXLSX >= 2.6.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sidorchuk\\.nuget\\packages\\": {},
+    "C:\\Users\\dmitr\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\DesktopClient.csproj",
+      "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\CiGroup\\DesktopClient\\DesktopClient.csproj",
       "projectName": "DesktopClient",
-      "projectPath": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\DesktopClient.csproj",
-      "packagesPath": "C:\\Users\\sidorchuk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sidorchuk\\source\\KernelAccounting\\DesktopClient\\obj\\",
+      "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\CiGroup\\DesktopClient\\DesktopClient.csproj",
+      "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dmitr\\source\\repos\\CiGroup\\DesktopClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sidorchuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -426,7 +499,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -443,6 +516,10 @@
           "MySqlConnector": {
             "target": "Package",
             "version": "[2.4.0, )"
+          },
+          "NanoXLSX": {
+            "target": "Package",
+            "version": "[2.6.4, )"
           }
         },
         "imports": [
@@ -464,7 +541,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

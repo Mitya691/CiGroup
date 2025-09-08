@@ -21,3 +21,15 @@ C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net6.0\Sharp7.dll
 C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net6.0\refint\Sharp7.dll
 C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net6.0\Sharp7.pdb
 C:\Users\sidorchuk\source\KernelAccounting\Sharp7\obj\Debug\net6.0\ref\Sharp7.dll
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\bin\Debug\net6.0\Sharp7.deps.json
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\bin\Debug\net6.0\Sharp7.dll
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\bin\Debug\net6.0\Sharp7.pdb
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\obj\Debug\net6.0\Sharp7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\obj\Debug\net6.0\Sharp7.AssemblyInfoInputs.cache
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\obj\Debug\net6.0\Sharp7.AssemblyInfo.cs
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\obj\Debug\net6.0\Sharp7.csproj.CoreCompileInputs.cache
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\obj\Debug\net6.0\Sharp7.sourcelink.json
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\obj\Debug\net6.0\Sharp7.dll
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\obj\Debug\net6.0\refint\Sharp7.dll
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\obj\Debug\net6.0\Sharp7.pdb
+C:\Users\dmitr\source\repos\CiGroup\Sharp7\obj\Debug\net6.0\ref\Sharp7.dll

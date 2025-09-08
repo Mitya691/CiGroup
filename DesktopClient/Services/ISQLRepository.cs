@@ -12,7 +12,7 @@ namespace DesktopClient.Services
         // Стартовая загрузка – 30 свежих карточек
         Task<List<Card>> GetLast30CardsAsync(CancellationToken ct = default);
 
-        Task<List<Card>> GetCardsForFilter(DateTime? filterStart, DateTime? filterStop, CancellationToken ct = default);
+        Task<List<Card>> GetCardsForInterval(DateTime? filterStart, DateTime? filterStop, CancellationToken ct = default);
 
         Task<bool> CheckCompletedIntervalAsync(DateTime lastEndInterval, CancellationToken ct = default);
 

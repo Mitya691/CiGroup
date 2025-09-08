@@ -37,6 +37,7 @@ namespace DesktopClient
             serviceCollection.AddTransient<AutorizationDialogVM>();
             serviceCollection.AddTransient<RegisterDialogVM>();
             serviceCollection.AddTransient<HomeDialogVM>();
+            serviceCollection.AddTransient<ReportDialogVM>();
 
             Services = serviceCollection.BuildServiceProvider();
 

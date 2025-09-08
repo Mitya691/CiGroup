@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sharp7")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88fbf206fff355d5596055e6fec3fde77b05e8b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f110ae578739ac042e94637a32f95e183b2388aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sharp7")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sharp7")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

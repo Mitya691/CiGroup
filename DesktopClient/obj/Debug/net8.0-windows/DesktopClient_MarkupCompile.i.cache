@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\obj\Debug\net8.0-windows\
+C:\Users\dmitr\Source\Repos\CiGroup\DesktopClient\obj\Debug\net8.0-windows\
 DesktopClient
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\sidorchuk\source\KernelAccounting\DesktopClient\App.xaml
+C:\Users\dmitr\Source\Repos\CiGroup\DesktopClient\App.xaml
 71087934675
 1-1506774534
-351214222971
-205-502389270
+39-1498047741
+206-1406197063
 Helpers\UserBadge.xaml;Helpers\UserControl1.xaml;MainWindow.xaml;View\AutorizationView.xaml;View\HomeView.xaml;View\RegisterView.xaml;View\ReportView.xaml;
 
 False
