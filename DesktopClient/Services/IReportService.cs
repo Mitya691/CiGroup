@@ -8,6 +8,7 @@ namespace DesktopClient.Services
 {
     interface IReportService
     {
-        Task<byte[]> NewReport(DateTime? Start, DateTime? Stop);
+        Task<string> NewReport(DateTime? Start, DateTime? Stop);
+        void SendReport(string reportPath, string mail);
     }
 }

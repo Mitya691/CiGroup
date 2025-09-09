@@ -13,6 +13,7 @@ namespace DesktopClient.VM
         private readonly MainWindowVM _shell;
 
         public AsyncRelayCommand NavigateToHomeCommand { get; }
+        public AsyncRelayCommand GenerateReport {  get; }
 
         public ReportDialogVM(MainWindowVM shell)
         {
